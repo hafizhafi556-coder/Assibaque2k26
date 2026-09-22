@@ -1,0 +1,575 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-heading: 'Cinzel', serif;
+    --font-fest-display: 'Cinzel Decorative', 'Cinzel', serif;
+    --font-fest-motto: 'Noto Serif Malayalam', 'Playfair Display', serif;
+    --font-sans: 'Plus Jakarta Sans', 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-outfit: 'Outfit', sans-serif;
+    --font-malayalam: 'Anek Malayalam', sans-serif;
+    --font-serif: 'Playfair Display', serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #ffffff;
+    color: #0f172a;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  .dark body {
+    background-color: #090d16;
+    color: #f8fafc;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: var(--font-heading);
+  }
+
+  .font-fest-display {
+    font-family: var(--font-fest-display), serif;
+  }
+
+  .font-fest-motto {
+    font-family: var(--font-fest-motto), serif;
+  }
+
+  .font-outfit {
+    font-family: var(--font-outfit), sans-serif;
+  }
+
+  .font-serif-luxury {
+    font-family: var(--font-serif), serif;
+  }
+
+  .font-malayalam {
+    font-family: var(--font-malayalam), sans-serif;
+  }
+}
+
+/* ==========================================================================
+   ADAPTIVE DARK MODE TYPOGRAPHY & HIGH-CONTRAST PALETTES
+   Ensures all fonts, titles, body, labels, badges, and controls adapt seamlessly
+   ========================================================================== */
+.dark {
+  color-scheme: dark;
+}
+
+/* Base Headings & Labels in Dark Mode */
+.dark h1, 
+.dark h2, 
+.dark h3, 
+.dark h4, 
+.dark h5, 
+.dark h6 {
+  color: #f8fafc;
+}
+
+.dark p {
+  color: #cbd5e1;
+}
+
+.dark label {
+  color: #e2e8f0;
+}
+
+/* Adaptive Slate Text Color Scales */
+.dark .text-slate-950,
+.dark .text-slate-900 {
+  color: #f8fafc !important;
+}
+
+.dark .text-slate-850,
+.dark .text-slate-800 {
+  color: #f1f5f9 !important;
+}
+
+.dark .text-slate-700 {
+  color: #e2e8f0 !important;
+}
+
+.dark .text-slate-600 {
+  color: #cbd5e1 !important;
+}
+
+.dark .text-slate-500 {
+  color: #94a3b8 !important;
+}
+
+.dark .text-slate-400 {
+  color: #94a3b8 !important;
+}
+
+/* Adaptive Gold, Amber & Yellow Font Colors for Dark Mode */
+.dark .text-amber-950 {
+  color: #fef08a !important;
+}
+
+.dark .text-amber-900 {
+  color: #fde047 !important;
+}
+
+.dark .text-amber-800 {
+  color: #fcd34d !important;
+}
+
+.dark .text-amber-700 {
+  color: #fbbf24 !important;
+}
+
+.dark .text-amber-600 {
+  color: #f59e0b !important;
+}
+
+.dark .text-yellow-900,
+.dark .text-yellow-800 {
+  color: #fef08a !important;
+}
+
+/* Adaptive Blue, Emerald, Rose, Purple & Sky Font Colors */
+.dark .text-blue-950,
+.dark .text-blue-900 {
+  color: #bfdbfe !important;
+}
+
+.dark .text-blue-800 {
+  color: #93c5fd !important;
+}
+
+.dark .text-blue-700 {
+  color: #60a5fa !important;
+}
+
+.dark .text-emerald-950,
+.dark .text-emerald-900 {
+  color: #a7f3d0 !important;
+}
+
+.dark .text-emerald-800 {
+  color: #6ee7b7 !important;
+}
+
+.dark .text-emerald-700 {
+  color: #34d399 !important;
+}
+
+.dark .text-rose-950,
+.dark .text-rose-900 {
+  color: #fecdd3 !important;
+}
+
+.dark .text-rose-800 {
+  color: #fda4af !important;
+}
+
+.dark .text-rose-700 {
+  color: #fb7185 !important;
+}
+
+.dark .text-sky-950,
+.dark .text-sky-900 {
+  color: #bae6fd !important;
+}
+
+.dark .text-sky-800 {
+  color: #7dd3fc !important;
+}
+
+.dark .text-purple-950,
+.dark .text-purple-900 {
+  color: #e9d5ff !important;
+}
+
+.dark .text-purple-800 {
+  color: #d8b4fe !important;
+}
+
+/* Adaptive Form Elements, Inputs, Selects & Textareas */
+.dark input:not([type="checkbox"]):not([type="radio"]):not([type="color"]):not([type="range"]):not([type="submit"]):not([type="button"]):not([type="reset"]),
+.dark select,
+.dark textarea {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+  border-color: #334155 !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #64748b !important;
+}
+
+.dark input:focus,
+.dark select:focus,
+.dark textarea:focus {
+  border-color: #f59e0b !important;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.25) !important;
+}
+
+/* Adaptive Cards, Panels, Modals & Surfaces in Dark Mode */
+.dark .bg-white {
+  background-color: #0f172a;
+}
+
+.dark .bg-slate-50 {
+  background-color: #0b1120;
+}
+
+.dark .bg-slate-100 {
+  background-color: #1e293b;
+}
+
+.dark .bg-slate-200 {
+  background-color: #334155;
+}
+
+.dark .border-slate-100 {
+  border-color: #1e293b;
+}
+
+.dark .border-slate-200 {
+  border-color: #1e293b;
+}
+
+.dark .border-slate-300 {
+  border-color: #334155;
+}
+
+/* Adaptive Tinted Badges & Buttons in Dark Mode */
+.dark .bg-amber-50 {
+  background-color: rgba(245, 158, 11, 0.12);
+}
+
+.dark .bg-amber-100 {
+  background-color: rgba(245, 158, 11, 0.2);
+}
+
+.dark .border-amber-200,
+.dark .border-amber-300 {
+  border-color: rgba(245, 158, 11, 0.35);
+}
+
+.dark .bg-blue-50 {
+  background-color: rgba(2, 132, 199, 0.12);
+}
+
+.dark .bg-blue-100 {
+  background-color: rgba(2, 132, 199, 0.2);
+}
+
+.dark .border-blue-200,
+.dark .border-blue-300 {
+  border-color: rgba(2, 132, 199, 0.35);
+}
+
+.dark .bg-emerald-50 {
+  background-color: rgba(16, 185, 129, 0.12);
+}
+
+.dark .bg-emerald-100 {
+  background-color: rgba(16, 185, 129, 0.2);
+}
+
+.dark .border-emerald-200,
+.dark .border-emerald-300 {
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+.dark .bg-rose-50 {
+  background-color: rgba(244, 63, 94, 0.12);
+}
+
+.dark .bg-rose-100 {
+  background-color: rgba(244, 63, 94, 0.2);
+}
+
+.dark .border-rose-200,
+.dark .border-rose-300 {
+  border-color: rgba(244, 63, 94, 0.35);
+}
+
+.dark .bg-sky-50 {
+  background-color: rgba(14, 165, 233, 0.12);
+}
+
+.dark .bg-sky-100 {
+  background-color: rgba(14, 165, 233, 0.2);
+}
+
+.dark .border-sky-200,
+.dark .border-sky-300 {
+  border-color: rgba(14, 165, 233, 0.35);
+}
+
+.dark .bg-purple-50 {
+  background-color: rgba(168, 85, 247, 0.12);
+}
+
+.dark .bg-purple-100 {
+  background-color: rgba(168, 85, 247, 0.2);
+}
+
+.dark .border-purple-200,
+.dark .border-purple-300 {
+  border-color: rgba(168, 85, 247, 0.35);
+}
+
+/* Adaptive Tables in Dark Mode */
+.dark table thead tr {
+  background-color: #1e293b;
+  color: #f8fafc;
+}
+
+.dark table th {
+  color: #f1f5f9 !important;
+}
+
+.dark table td {
+  color: #e2e8f0;
+}
+
+.dark table tbody tr {
+  border-bottom-color: #1e293b;
+}
+
+.dark table tbody tr:hover {
+  background-color: rgba(245, 158, 11, 0.06);
+}
+
+/* Official Imam Shafi Fest Pure White & Midnight Dark Canvas */
+.bg-fest-canvas {
+  background-color: #ffffff;
+  background-image: 
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(217, 119, 6, 0.04), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 60%, rgba(2, 132, 199, 0.03), transparent),
+    radial-gradient(circle at 50% 50%, #ffffff 0%, #fafafa 100%);
+  background-attachment: fixed;
+}
+
+.dark .bg-fest-canvas {
+  background-color: #090d16;
+  background-image: 
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(245, 158, 11, 0.08), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 60%, rgba(2, 132, 199, 0.07), transparent),
+    radial-gradient(circle at 50% 50%, #090d16 0%, #05080f 100%);
+  background-attachment: fixed;
+}
+
+.bg-islamic-pattern {
+  background-color: #ffffff;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(2, 132, 199, 0.05) 0%, transparent 60%),
+    radial-gradient(circle at 100% 100%, rgba(245, 158, 11, 0.05) 0%, transparent 45%),
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l30 30-30 30L0 30zM30 6.864L53.136 30 30 53.136 6.864 30z' fill='%23d97706' fill-opacity='0.025' fill-rule='evenodd'/%3E%3Ccircle cx='30' cy='30' r='10' stroke='%23d97706' stroke-width='0.75' stroke-opacity='0.03' fill='none'/%3E%3C/svg%3E");
+}
+
+.dark .bg-islamic-pattern {
+  background-color: #090d16;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(2, 132, 199, 0.12) 0%, transparent 60%),
+    radial-gradient(circle at 100% 100%, rgba(245, 158, 11, 0.12) 0%, transparent 45%),
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l30 30-30 30L0 30zM30 6.864L53.136 30 30 53.136 6.864 30z' fill='%23fbbf24' fill-opacity='0.04' fill-rule='evenodd'/%3E%3Ccircle cx='30' cy='30' r='10' stroke='%23fbbf24' stroke-width='0.75' stroke-opacity='0.05' fill='none'/%3E%3C/svg%3E");
+}
+
+.bg-islamic-subtle {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 0l20 20-20 20L0 20zM20 5l15 15-15 15L5 20z' fill='%23d97706' fill-opacity='0.02' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.dark .bg-islamic-subtle {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 0l20 20-20 20L0 20zM20 5l15 15-15 15L5 20z' fill='%23fbbf24' fill-opacity='0.035' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+/* Executive Gold & Sapphire Text Effects */
+.text-gold-foil {
+  background: linear-gradient(135deg, #b45309 0%, #d97706 35%, #92400e 70%, #b45309 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark .text-gold-foil {
+  background: linear-gradient(135deg, #fef08a 0%, #fbbf24 35%, #f59e0b 70%, #fef08a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-glow {
+  text-shadow: 0 0 16px rgba(245, 158, 11, 0.25);
+}
+
+.dark .text-gold-glow {
+  text-shadow: 0 0 20px rgba(245, 158, 11, 0.45);
+}
+
+/* Executive Official App Cards & Panels */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+}
+
+.dark .glass-panel {
+  background: rgba(15, 23, 42, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(51, 65, 85, 0.7);
+  box-shadow: 0 4px 24px -2px rgba(0, 0, 0, 0.4);
+}
+
+.glass-panel-gold {
+  background: #ffffff;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid #fde68a;
+  box-shadow: 0 10px 30px -4px rgba(217, 119, 6, 0.08), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
+}
+
+.dark .glass-panel-gold {
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  box-shadow: 0 10px 30px -4px rgba(245, 158, 11, 0.15), 0 2px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.fest-card-elevated {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px -1px rgba(15, 23, 42, 0.04), 0 1px 3px -1px rgba(15, 23, 42, 0.02);
+  transition: all 0.2s ease-in-out;
+}
+
+.dark .fest-card-elevated {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  box-shadow: 0 4px 16px -1px rgba(0, 0, 0, 0.3);
+}
+
+.fest-card-elevated:hover {
+  border-color: #fcd34d;
+  box-shadow: 0 8px 24px -4px rgba(217, 119, 6, 0.12), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
+}
+
+.dark .fest-card-elevated:hover {
+  border-color: #fbbf24;
+  box-shadow: 0 8px 24px -4px rgba(245, 158, 11, 0.2), 0 2px 6px -1px rgba(0, 0, 0, 0.4);
+}
+
+/* Mobile Bottom Navigation */
+.mobile-nav-bar {
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid #e2e8f0;
+  box-shadow: 0 -4px 24px rgba(15, 23, 42, 0.06);
+}
+
+.dark .mobile-nav-bar {
+  background: rgba(15, 23, 42, 0.96);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid #1e293b;
+  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Touch targets */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive typography clamp utilities */
+.text-responsive-heading {
+  font-size: clamp(1.5rem, 4vw + 1rem, 3.25rem);
+  line-height: 1.15;
+}
+
+.text-responsive-motto {
+  font-size: clamp(0.95rem, 2vw + 0.5rem, 1.6rem);
+  line-height: 1.4;
+}
+
+/* Custom Scrollbar for Official UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #090d16;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+  border: 1px solid #e2e8f0;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+  border: 1px solid #1e293b;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d97706;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #fbbf24;
+}
+
+/* Print Optimization for Certificates, Result Cards, and Student Points Reports */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .printable-card {
+    border: 2px solid #000 !important;
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  .print-modal {
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .student-points-print-modal-overlay {
+    position: static !important;
+    background: transparent !important;
+    padding: 0 !important;
+    display: block !important;
+  }
+  .student-points-printable-sheet {
+    box-shadow: none !important;
+    border: none !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}

@@ -1,0 +1,282 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <!-- Gradients for 3D Typography -->
+    <linearGradient id="maroonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8e124f"/>
+      <stop offset="100%" stop-color="#670d38"/>
+    </linearGradient>
+    <linearGradient id="greenFront" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00a86b"/>
+      <stop offset="100%" stop-color="#008855"/>
+    </linearGradient>
+    <linearGradient id="greenSide" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#006b43"/>
+      <stop offset="100%" stop-color="#004d30"/>
+    </linearGradient>
+    <linearGradient id="purpleFront" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6b21a8"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+    <linearGradient id="purpleSide" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b0764"/>
+      <stop offset="100%" stop-color="#240046"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="5" stdDeviation="4" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- BACKGROUND: Clean transparent or soft base -->
+  <!-- 1. TOP HEART MOTIF (Maroon Silhouette & Artistic Cutouts) -->
+  <g id="heart-emblem" transform="translate(400, 320)" filter="url(#shadow)">
+    <!-- Top left microphone -->
+    <g transform="translate(-130, -210) rotate(-35)">
+      <rect x="-8" y="0" width="16" height="55" rx="3" fill="#8e124f"/>
+      <rect x="-12" y="10" width="24" height="4" fill="#8e124f"/>
+      <circle cx="0" cy="-12" r="16" fill="#8e124f"/>
+      <path d="M-10,-12 Q0,-24 10,-12" stroke="#ffffff" stroke-width="2" fill="none"/>
+      <line x1="-16" y1="-12" x2="16" y2="-12" stroke="#ffffff" stroke-width="2"/>
+    </g>
+
+    <!-- Top center calligraphy pen nib -->
+    <g transform="translate(-40, -270) rotate(-10)">
+      <path d="M0,-35 L16,5 L11,45 L-11,45 L-16,5 Z" fill="#8e124f"/>
+      <line x1="0" y1="-30" x2="0" y2="15" stroke="#ffffff" stroke-width="2.5"/>
+      <circle cx="0" cy="15" r="3" fill="#ffffff"/>
+    </g>
+
+    <!-- Top ruler/stem -->
+    <g transform="translate(20, -260) rotate(15)">
+      <rect x="-10" y="-30" width="20" height="70" rx="4" fill="#8e124f"/>
+      <line x1="-5" y1="-20" x2="5" y2="-20" stroke="#ffffff" stroke-width="2"/>
+      <line x1="-5" y1="-10" x2="5" y2="-10" stroke="#ffffff" stroke-width="2"/>
+      <line x1="-5" y1="0" x2="5" y2="0" stroke="#ffffff" stroke-width="2"/>
+      <line x1="-5" y1="10" x2="5" y2="10" stroke="#ffffff" stroke-width="2"/>
+    </g>
+
+    <!-- Top right paint brush & angled brush -->
+    <g transform="translate(140, -180) rotate(45)">
+      <!-- Brush handle -->
+      <path d="M-6,-45 L6,-45 L4,25 L-4,25 Z" fill="#8e124f"/>
+      <!-- Ferrule -->
+      <rect x="-7" y="25" width="14" height="15" fill="#8e124f"/>
+      <!-- Bristles tip -->
+      <path d="M-7,40 Q-2,75 0,85 Q2,75 7,40 Z" fill="#8e124f"/>
+    </g>
+    <!-- Secondary angled brush stroke -->
+    <path d="M110,-100 Q190,-60 210,-40 Q220,-30 200,-25 Q170,-25 100,-70 Z" fill="#8e124f"/>
+
+    <!-- MAIN ANATOMICAL HEART SHAPE -->
+    <path d="M 0, 240
+             C -60, 210  -220, 110  -220, -40
+             C -220, -160 -110, -210   0, -130
+             C  110, -210  220, -160   220, -40
+             C  220, 110   60, 210     0, 240 Z"
+          fill="url(#maroonGrad)"/>
+
+    <!-- ARTISTIC ICONS (WHITE CUTOUTS INSIDE HEART) -->
+
+    <!-- A. Open Holy Quran on Rehal (Center) with Radiating Beams -->
+    <!-- Light Rays projecting upwards -->
+    <g stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.95">
+      <line x1="0" y1="-50" x2="0" y2="-110"/>
+      <line x1="-15" y1="-50" x2="-35" y2="-105"/>
+      <line x1="15" y1="-50" x2="35" y2="-105"/>
+      <line x1="-30" y1="-45" x2="-70" y2="-95"/>
+      <line x1="30" y1="-45" x2="70" y2="-95"/>
+      <line x1="-45" y1="-40" x2="-100" y2="-80"/>
+      <line x1="45" y1="-40" x2="100" y2="-80"/>
+      <line x1="-60" y1="-30" x2="-120" y2="-55"/>
+      <line x1="60" y1="-30" x2="120" y2="-55"/>
+    </g>
+
+    <!-- Open Holy Quran Pages -->
+    <g transform="translate(0, -35)">
+      <!-- Left Page -->
+      <path d="M-2,0 Q-45,-15 -90,-8 Q-45,15 -2,22 Z" fill="#ffffff"/>
+      <path d="M-10,3 Q-45,-8 -80,-2" stroke="#8e124f" stroke-width="2" fill="none"/>
+      <path d="M-10,8 Q-45,-3 -80,4" stroke="#8e124f" stroke-width="2" fill="none"/>
+      <path d="M-10,13 Q-45,2 -80,10" stroke="#8e124f" stroke-width="2" fill="none"/>
+      <!-- Right Page -->
+      <path d="M2,0 Q45,-15 90,-8 Q45,15 2,22 Z" fill="#ffffff"/>
+      <path d="M10,3 Q45,-8 80,-2" stroke="#8e124f" stroke-width="2" fill="none"/>
+      <path d="M10,8 Q45,-3 80,4" stroke="#8e124f" stroke-width="2" fill="none"/>
+      <path d="M10,13 Q45,2 80,10" stroke="#8e124f" stroke-width="2" fill="none"/>
+      <!-- Rehal (X-stand) -->
+      <path d="M-35,18 L35,55 L25,60 L-45,23 Z" fill="#ffffff"/>
+      <path d="M35,18 L-35,55 L-25,60 L45,23 Z" fill="#ffffff"/>
+    </g>
+
+    <!-- B. Artist Palette (Upper-Left Ventricle) -->
+    <g transform="translate(-140, -70)">
+      <path d="M0,0 C-30,5 -55,30 -40,65 C-25,100 15,90 35,70 C55,50 30,-5 0,0 Z" fill="#ffffff"/>
+      <!-- Thumb hole -->
+      <circle cx="-10" cy="55" r="7" fill="#8e124f"/>
+      <!-- Paint wells -->
+      <circle cx="-25" cy="25" r="4.5" fill="#8e124f"/>
+      <circle cx="-10" cy="15" r="4.5" fill="#8e124f"/>
+      <circle cx="10" cy="20" r="4.5" fill="#8e124f"/>
+      <circle cx="22" cy="38" r="4.5" fill="#8e124f"/>
+      <circle cx="15" cy="58" r="4.5" fill="#8e124f"/>
+    </g>
+
+    <!-- C. Whirling Sufi Dervish (Mid-Left) -->
+    <g transform="translate(-115, 20) scale(0.85)">
+      <!-- Head / Sikke (tall conical hat) tilted -->
+      <path d="M-8,-25 L-2,-50 L6,-48 L2,-23 Z" fill="#ffffff"/>
+      <!-- Left arm raised upward to receive grace -->
+      <path d="M-5,-20 Q-25,-35 -40,-30 Q-42,-25 -25,-15 Q-15,-10 -5,-15 Z" fill="#ffffff"/>
+      <!-- Right arm downward to bestow grace -->
+      <path d="M5,-20 Q20,-15 30,-5 Q25,0 15,-10 Z" fill="#ffffff"/>
+      <!-- Flaring Tennure skirt (wide flowing circular dress) -->
+      <path d="M-6,-15 Q-40,30 -60,60 Q0,75 50,45 Q20,15 6,-15 Z" fill="#ffffff"/>
+      <!-- Internal folds of skirt -->
+      <path d="M-30,35 Q-15,62 0,68" stroke="#8e124f" stroke-width="2" fill="none"/>
+      <path d="M-5,25 Q10,50 25,52" stroke="#8e124f" stroke-width="2" fill="none"/>
+    </g>
+
+    <!-- D. Brain Circuit & Microchip (Mid-Right) -->
+    <g transform="translate(125, -50) scale(0.9)">
+      <!-- Brain lobe silhouette -->
+      <path d="M0,0 C-10,-20 20,-35 45,-20 C65,-10 75,15 60,35 C45,50 20,40 10,25 C0,15 10,10 0,0 Z" fill="#ffffff"/>
+      <!-- Circuit lines inside brain -->
+      <circle cx="20" cy="-5" r="3" fill="#8e124f"/>
+      <circle cx="45" cy="5" r="3" fill="#8e124f"/>
+      <circle cx="30" cy="20" r="3" fill="#8e124f"/>
+      <path d="M20,-5 L35,-5 L35,15 L30,20 M35,5 L45,5" stroke="#8e124f" stroke-width="2" fill="none"/>
+
+      <!-- Integrated circuit chip directly below -->
+      <g transform="translate(25, 55)">
+        <rect x="-18" y="-12" width="36" height="24" rx="2" fill="#ffffff"/>
+        <!-- Chip pins -->
+        <line x1="-12" y1="-18" x2="-12" y2="-12" stroke="#ffffff" stroke-width="2.5"/>
+        <line x1="0" y1="-18" x2="0" y2="-12" stroke="#ffffff" stroke-width="2.5"/>
+        <line x1="12" y1="-18" x2="12" y2="-12" stroke="#ffffff" stroke-width="2.5"/>
+        <line x1="-12" y1="12" x2="-12" y2="18" stroke="#ffffff" stroke-width="2.5"/>
+        <line x1="0" y1="12" x2="0" y2="18" stroke="#ffffff" stroke-width="2.5"/>
+        <line x1="12" y1="12" x2="12" y2="18" stroke="#ffffff" stroke-width="2.5"/>
+        <rect x="-12" y="-7" width="24" height="14" fill="#8e124f"/>
+      </g>
+    </g>
+
+    <!-- E. Calligraphy Pen & Gear / Hourglass (Lower-Right) -->
+    <g transform="translate(85, 35)">
+      <!-- Calligraphy pen nib -->
+      <path d="M-15,0 L0,-35 L15,0 L8,40 L-8,40 Z" fill="#ffffff"/>
+      <line x1="0" y1="-30" x2="0" y2="10" stroke="#8e124f" stroke-width="2"/>
+      <circle cx="0" cy="10" r="2.5" fill="#8e124f"/>
+      <!-- Gear -->
+      <circle cx="-35" cy="35" r="14" fill="#ffffff"/>
+      <circle cx="-35" cy="35" r="6" fill="#8e124f"/>
+      <!-- Hourglass -->
+      <path d="M20,25 L40,25 L23,45 L37,45 L20,65 L40,65 Z" fill="#ffffff" stroke="#8e124f" stroke-width="1.5"/>
+    </g>
+
+    <!-- F. Intricate Arabic Calligraphy (Lower Curve of the Heart) -->
+    <g transform="translate(0, 130)">
+      <!-- Rich Islamic Thuluth / Diwani Calligraphic Arcs -->
+      <path d="M-130,-15 Q-90,35 -40,55 Q0,75 50,45 Q90,20 120,-10" stroke="#ffffff" stroke-width="5" stroke-linecap="round" fill="none"/>
+      <path d="M-110,5 Q-70,50 -20,60 Q30,65 80,30" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+      <path d="M-80,-25 Q-60,-5 -40,-25 Q-20,-5 0,-25 Q20,-5 40,-25" stroke="#ffffff" stroke-width="3" stroke-linecap="round" fill="none"/>
+      <path d="M-95,15 L-90,-10 M-75,25 L-70,0 M-55,35 L-50,10 M-35,45 L-30,15 M-10,50 L-5,20" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+      <path d="M10,48 L15,20 M30,40 L35,15 M55,30 L60,5 M75,18 L80,-5" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+      <!-- Diacritical Calligraphy Accents (Tashkeel) -->
+      <circle cx="-65" cy="-20" r="3" fill="#ffffff"/>
+      <circle cx="-45" cy="-35" r="3" fill="#ffffff"/>
+      <circle cx="20" cy="-30" r="3" fill="#ffffff"/>
+      <circle cx="45" cy="-15" r="3" fill="#ffffff"/>
+      <path d="M-20,0 Q-15,-10 -10,0" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+      <path d="M25,0 Q30,-10 35,0" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+    </g>
+  </g>
+
+  <!-- 2. MOTTO IN MALAYALAM -->
+  <g id="motto" transform="translate(400, 685)">
+    <text text-anchor="middle" font-family="'Anek Malayalam', 'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="28" fill="#8e124f" letter-spacing="1">
+      &quot;കലർന്ന കാലത്ത്, കലർപ്പില്ലാത്ത ഈമാൻ!&quot;
+    </text>
+  </g>
+
+  <!-- 3. GRAND STYLIZED 3D MALAYALAM TYPOGRAPHY: തനിമിയ്യത്ത് -->
+  <g id="title-typography" transform="translate(40, 720)" filter="url(#shadow)">
+    <!-- A. LETTER 'ത' (GREEN 3D WITH CHAIN DETAIL) -->
+    <g id="letter-tha" transform="translate(10, 20)">
+      <!-- 3D Extrusion Side -->
+      <path d="M 12,125 L 0,140 L 0,25 L 12,10 Z M 12,10 L 0,25 L 75,25 L 87,10 Z" fill="url(#greenSide)"/>
+      <path d="M 87,10 L 75,25 L 75,140 L 87,125 Z" fill="url(#greenSide)"/>
+      <path d="M 35,65 L 25,78 L 65,78 L 75,65 Z" fill="url(#greenSide)"/>
+      <!-- Front Face -->
+      <rect x="12" y="10" width="75" height="115" rx="14" fill="url(#greenFront)"/>
+      <!-- Inner cutout -->
+      <rect x="32" y="32" width="35" height="42" rx="6" fill="#ffffff"/>
+      <!-- White linked chain in the circular arch -->
+      <g stroke="#ffffff" stroke-width="3" fill="none" transform="translate(50, 95)">
+        <ellipse cx="0" cy="-12" rx="4" ry="7"/>
+        <ellipse cx="0" cy="2" rx="4" ry="7"/>
+        <ellipse cx="0" cy="16" rx="4" ry="7"/>
+      </g>
+    </g>
+
+    <!-- B. LETTER 'നി' (GREEN 3D WITH DRAFTING PEN NIB VERTICAL) -->
+    <g id="letter-ni" transform="translate(130, 0)">
+      <!-- Top Horizontal & Left Stem -->
+      <path d="M 0,30 L 70,30 L 70,45 L 0,45 Z" fill="url(#greenFront)"/>
+      <path d="M 70,30 L 85,15 L 15,15 L 0,30 Z" fill="url(#greenSide)"/>
+      <!-- Downward pointing pen nib stem -->
+      <path d="M 10,30 L 28,30 L 28,145 L 19,165 L 10,145 Z" fill="url(#greenFront)"/>
+      <path d="M 28,30 L 38,18 L 38,135 L 28,145 Z" fill="url(#greenSide)"/>
+      <!-- Pen nib slit detail -->
+      <line x1="19" y1="120" x2="19" y2="162" stroke="#ffffff" stroke-width="2"/>
+      <circle cx="19" cy="120" r="2.5" fill="#ffffff"/>
+      <!-- Arch right stem -->
+      <path d="M 52,30 L 70,30 L 70,145 L 52,145 Z" fill="url(#greenFront)"/>
+      <path d="M 70,30 L 80,18 L 80,135 L 70,145 Z" fill="url(#greenSide)"/>
+    </g>
+
+    <!-- C. LETTER 'മി' (GREEN 3D GEOMETRIC) -->
+    <g id="letter-mi" transform="translate(235, 20)">
+      <!-- 3D Extrusion -->
+      <path d="M 0,25 L 12,10 L 82,10 L 70,25 Z" fill="url(#greenSide)"/>
+      <path d="M 70,25 L 82,10 L 82,125 L 70,140 Z" fill="url(#greenSide)"/>
+      <!-- Front Face -->
+      <rect x="0" y="25" width="70" height="115" rx="8" fill="url(#greenFront)"/>
+      <!-- Angular cut across middle -->
+      <polygon points="15,45 55,45 15,115" fill="#ffffff" opacity="0.95"/>
+      <polygon points="25,115 55,55 55,115" fill="url(#greenFront)"/>
+    </g>
+
+    <!-- D. LETTER 'യ്യ' (PURPLE 3D WITH LIGHTNING FISSURE & PEN NIB BASE) -->
+    <g id="letter-yya" transform="translate(340, 10)">
+      <!-- 3D Extrusions -->
+      <path d="M 0,35 L 15,18 L 95,18 L 80,35 Z" fill="url(#purpleSide)"/>
+      <path d="M 80,35 L 95,18 L 95,145 L 80,160 Z" fill="url(#purpleSide)"/>
+      <!-- Main Body -->
+      <path d="M 0,35 L 80,35 L 80,160 L 60,185 L 45,185 L 40,205 L 35,185 L 20,185 L 0,160 Z" fill="url(#purpleFront)"/>
+      <!-- Electric White Lightning Bolt Crack -->
+      <polygon points="35,45 48,45 38,95 50,95 28,155 36,105 26,105" fill="#ffffff"/>
+      <!-- Lower fountain pen nib -->
+      <path d="M 30,165 L 40,205 L 50,165 Z" fill="#240046"/>
+      <line x1="40" y1="170" x2="40" y2="200" stroke="#ffffff" stroke-width="1.5"/>
+    </g>
+
+    <!-- E. LETTER 'ത്ത്' (PURPLE 3D CHISELED BLOCK) -->
+    <g id="letter-tth" transform="translate(460, 20)">
+      <!-- 3D Extrusions -->
+      <path d="M 0,25 L 14,10 L 104,10 L 90,25 Z" fill="url(#purpleSide)"/>
+      <path d="M 90,25 L 104,10 L 104,125 L 90,140 Z" fill="url(#purpleSide)"/>
+      <!-- Front Body -->
+      <rect x="0" y="25" width="90" height="115" rx="12" fill="url(#purpleFront)"/>
+      <rect x="22" y="45" width="46" height="50" rx="6" fill="#ffffff"/>
+      <!-- Small Chandrakkala / Virama accent mark on top -->
+      <path d="M 55, -5 Q 75, -25 95, -5 Q 75, -12 55, -5 Z" fill="url(#purpleFront)"/>
+      <path d="M 95,-5 L 105,-15 Q 85,-22 65,-15 L 55,-5 Z" fill="url(#purpleSide)"/>
+    </g>
+
+    <!-- F. SUBTITLE: ASSIBAQUE '26 (Deep Blue/Purple Clean Bold Font) -->
+    <g id="assibaque-sub" transform="translate(465, 175)">
+      <text x="0" y="0" font-family="'Cinzel', 'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="28" fill="#3b0764" letter-spacing="3">
+        ASSIBAQUE &apos;26
+      </text>
+    </g>
+  </g>
+</svg>

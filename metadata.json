@@ -1,0 +1,8 @@
+{
+  "name": "Remix തനിമിയ്യത്ത് – Arts Fest Management System",
+  "description": "തനിമിയ്യത്ത് (ASSIBAQUE \u002726) Arts Fest Management System - കലർന്ന കാലത്ത് കലർപ്പില്ലാത്ത ഈമാൻ. Live scoreboard for Nayro, Zayro, and Lucero, student results portal, and admin controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
